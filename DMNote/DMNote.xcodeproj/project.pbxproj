@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E44F5CB1C9124CB0071315E /* DMSuperTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E44F5CA1C9124CB0071315E /* DMSuperTabBarController.swift */; };
+		1E44F5CD1C9126910071315E /* DMToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E44F5CC1C9126910071315E /* DMToolBar.swift */; };
 		1E88084F1C8EDD5D009A9E9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E88084E1C8EDD5D009A9E9C /* AppDelegate.swift */; };
-		1E8808511C8EDD5D009A9E9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8808501C8EDD5D009A9E9C /* ViewController.swift */; };
-		1E8808541C8EDD5D009A9E9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E8808521C8EDD5D009A9E9C /* Main.storyboard */; };
+		1E8808511C8EDD5D009A9E9C /* DMMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8808501C8EDD5D009A9E9C /* DMMainController.swift */; };
 		1E8808561C8EDD5D009A9E9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E8808551C8EDD5D009A9E9C /* Assets.xcassets */; };
 		1E8808591C8EDD5D009A9E9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E8808571C8EDD5D009A9E9C /* LaunchScreen.storyboard */; };
 		1E8808641C8EDD5D009A9E9C /* DMNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8808631C8EDD5D009A9E9C /* DMNoteTests.swift */; };
 		1E88086F1C8EDD5D009A9E9C /* DMNoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E88086E1C8EDD5D009A9E9C /* DMNoteUITests.swift */; };
+		1E88087D1C8FC538009A9E9C /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E88087C1C8FC538009A9E9C /* Macros.swift */; };
+		1E88087F1C8FF1A1009A9E9C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E88087E1C8FF1A0009A9E9C /* UIView+Extension.swift */; };
+		1E8808811C91174B009A9E9C /* DMSuperNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8808801C91174B009A9E9C /* DMSuperNavigationController.swift */; };
+		FF884850A96138C7E1D09377 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF4C91F83A38404996AD6AA /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E44F5CA1C9124CB0071315E /* DMSuperTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMSuperTabBarController.swift; sourceTree = "<group>"; };
+		1E44F5CC1C9126910071315E /* DMToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMToolBar.swift; sourceTree = "<group>"; };
 		1E88084B1C8EDD5D009A9E9C /* DMNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E88084E1C8EDD5D009A9E9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1E8808501C8EDD5D009A9E9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1E8808531C8EDD5D009A9E9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1E8808501C8EDD5D009A9E9C /* DMMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMMainController.swift; sourceTree = "<group>"; };
 		1E8808551C8EDD5D009A9E9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E8808581C8EDD5D009A9E9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E88085A1C8EDD5D009A9E9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +53,12 @@
 		1E88086A1C8EDD5D009A9E9C /* DMNoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMNoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E88086E1C8EDD5D009A9E9C /* DMNoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMNoteUITests.swift; sourceTree = "<group>"; };
 		1E8808701C8EDD5D009A9E9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E88087C1C8FC538009A9E9C /* Macros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
+		1E88087E1C8FF1A0009A9E9C /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		1E8808801C91174B009A9E9C /* DMSuperNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMSuperNavigationController.swift; sourceTree = "<group>"; };
+		8089751ECAD5F45EEC33686A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AEF4C91F83A38404996AD6AA /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1335CCDA055E08516B914FD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF884850A96138C7E1D09377 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03A7AEFD3B28497748A4B145 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEF4C91F83A38404996AD6AA /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1E8808421C8EDD5D009A9E9C = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +102,8 @@
 				1E8808621C8EDD5D009A9E9C /* DMNoteTests */,
 				1E88086D1C8EDD5D009A9E9C /* DMNoteUITests */,
 				1E88084C1C8EDD5D009A9E9C /* Products */,
+				EA3B4A29754A4D9A1FF5C8FB /* Pods */,
+				03A7AEFD3B28497748A4B145 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +121,15 @@
 			isa = PBXGroup;
 			children = (
 				1E88084E1C8EDD5D009A9E9C /* AppDelegate.swift */,
-				1E8808501C8EDD5D009A9E9C /* ViewController.swift */,
-				1E8808521C8EDD5D009A9E9C /* Main.storyboard */,
+				1E8808501C8EDD5D009A9E9C /* DMMainController.swift */,
 				1E8808551C8EDD5D009A9E9C /* Assets.xcassets */,
 				1E8808571C8EDD5D009A9E9C /* LaunchScreen.storyboard */,
 				1E88085A1C8EDD5D009A9E9C /* Info.plist */,
+				1E88087C1C8FC538009A9E9C /* Macros.swift */,
+				1E88087E1C8FF1A0009A9E9C /* UIView+Extension.swift */,
+				1E8808801C91174B009A9E9C /* DMSuperNavigationController.swift */,
+				1E44F5CA1C9124CB0071315E /* DMSuperTabBarController.swift */,
+				1E44F5CC1C9126910071315E /* DMToolBar.swift */,
 			);
 			path = DMNote;
 			sourceTree = "<group>";
@@ -125,6 +152,15 @@
 			path = DMNoteUITests;
 			sourceTree = "<group>";
 		};
+		EA3B4A29754A4D9A1FF5C8FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8089751ECAD5F45EEC33686A /* Pods.debug.xcconfig */,
+				E1335CCDA055E08516B914FD /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E8808731C8EDD5D009A9E9C /* Build configuration list for PBXNativeTarget "DMNote" */;
 			buildPhases = (
+				DAE38C6140F9FCCE1E9C5BE2 /* Check Pods Manifest.lock */,
 				1E8808471C8EDD5D009A9E9C /* Sources */,
 				1E8808481C8EDD5D009A9E9C /* Frameworks */,
 				1E8808491C8EDD5D009A9E9C /* Resources */,
+				1F875E886BEA7EF395F635E4 /* Embed Pods Frameworks */,
+				DCD249AFD524D95E78945C6B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +232,7 @@
 				TargetAttributes = {
 					1E88084A1C8EDD5D009A9E9C = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = KK3D8WEPT9;
 					};
 					1E88085E1C8EDD5D009A9E9C = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -231,7 +271,6 @@
 			files = (
 				1E8808591C8EDD5D009A9E9C /* LaunchScreen.storyboard in Resources */,
 				1E8808561C8EDD5D009A9E9C /* Assets.xcassets in Resources */,
-				1E8808541C8EDD5D009A9E9C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +290,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F875E886BEA7EF395F635E4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAE38C6140F9FCCE1E9C5BE2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DCD249AFD524D95E78945C6B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1E8808471C8EDD5D009A9E9C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E8808511C8EDD5D009A9E9C /* ViewController.swift in Sources */,
+				1E44F5CB1C9124CB0071315E /* DMSuperTabBarController.swift in Sources */,
+				1E8808511C8EDD5D009A9E9C /* DMMainController.swift in Sources */,
+				1E8808811C91174B009A9E9C /* DMSuperNavigationController.swift in Sources */,
 				1E88084F1C8EDD5D009A9E9C /* AppDelegate.swift in Sources */,
+				1E88087F1C8FF1A1009A9E9C /* UIView+Extension.swift in Sources */,
+				1E88087D1C8FC538009A9E9C /* Macros.swift in Sources */,
+				1E44F5CD1C9126910071315E /* DMToolBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +385,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1E8808521C8EDD5D009A9E9C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1E8808531C8EDD5D009A9E9C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1E8808571C8EDD5D009A9E9C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -397,22 +481,28 @@
 		};
 		1E8808741C8EDD5D009A9E9C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8089751ECAD5F45EEC33686A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DMNote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-8ganji.DMNote";
+				PRODUCT_BUNDLE_IDENTIFIER = "yang-demoNote";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		1E8808751C8EDD5D009A9E9C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1335CCDA055E08516B914FD /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DMNote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-8ganji.DMNote";
+				PRODUCT_BUNDLE_IDENTIFIER = "yang-demoNote";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -484,6 +574,7 @@
 				1E8808751C8EDD5D009A9E9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E8808761C8EDD5D009A9E9C /* Build configuration list for PBXNativeTarget "DMNoteTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +583,7 @@
 				1E8808781C8EDD5D009A9E9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E8808791C8EDD5D009A9E9C /* Build configuration list for PBXNativeTarget "DMNoteUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +592,7 @@
 				1E88087B1C8EDD5D009A9E9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
