@@ -13,14 +13,15 @@ let mainCellIdentifier  =   "DMDirIdentifier"
 class DMMainController: UIViewController {
     
     lazy var toolBar:DMToolBar = {
-        
-        var toolbar = DMToolBar(frame: CGRect(x: 0, y: SCREENHEIGHT - 44 - NAVBAR_DEFAULT_HEIGHT, width: SCREENWIDTH, height: 44))
-        var label = UILabel(frame: CGRect(x: SCREENWIDTH - 90, y: 0, width: 90, height: 44))
-        label.textColor = RGBCOLOR(255, g: 170, b: 0)
-        label.text = "新建文件夹"
-        toolbar.addSubview(label)
+        var toolbar = DMToolBar(frame: CGRect(x: 0, y: SCREENHEIGHT - 44 - NAVBAR_DEFAULT_HEIGHT, width: SCREENWIDTH - 10, height: 44))
+        self.toolBarTextLabel.textColor = RGBCOLOR(255, g: 170, b: 0)
+        self.toolBarTextLabel.text = "新建文件夹"
+        self.toolBarTextLabel.textAlignment = .Right
+        toolbar.addSubview(self.toolBarTextLabel)
         return toolbar
     }()
+    
+    lazy var toolBarTextLabel:UILabel = UILabel(frame: CGRect(x: SCREENWIDTH - 100, y: 0, width: 90, height: 44))
     
     lazy var tableView:UITableView = {
         let tableView = UITableView(frame: self.view.frame)
@@ -67,6 +68,18 @@ class DMMainController: UIViewController {
 
     func editerClicked() {
         print("editer is Clicked")
+        for var i = 0; i < 10; i++ {
+            let index = NSIndexPath(forRow: i, inSection: 0)
+            let cell = tableView.cellForRowAtIndexPath(index) as! DMMainTableViewCell
+            cell.switchEditMode(!cell.editerMode, animate: true)
+            if cell.editerMode {
+                toolBarTextLabel.text = "删除"
+            }
+            else {
+                toolBarTextLabel.text = "新建文件夹"
+            }
+        }
+        
     }
     
     func mkdirClicked() {

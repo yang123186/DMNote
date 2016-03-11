@@ -1,0 +1,4 @@
+pod 'Alamofire', '~> 3.1.4'
+use_frameworks!
+pod 'SnapKit', '~> 0.18.0'
+use_frameworks!
