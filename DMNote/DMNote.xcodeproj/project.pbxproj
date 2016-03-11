@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1E44F5CB1C9124CB0071315E /* DMSuperTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E44F5CA1C9124CB0071315E /* DMSuperTabBarController.swift */; };
 		1E44F5CD1C9126910071315E /* DMToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E44F5CC1C9126910071315E /* DMToolBar.swift */; };
+		1E44F5CF1C929DB90071315E /* DMMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E44F5CE1C929DB90071315E /* DMMainTableViewCell.swift */; };
 		1E88084F1C8EDD5D009A9E9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E88084E1C8EDD5D009A9E9C /* AppDelegate.swift */; };
 		1E8808511C8EDD5D009A9E9C /* DMMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8808501C8EDD5D009A9E9C /* DMMainController.swift */; };
 		1E8808561C8EDD5D009A9E9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E8808551C8EDD5D009A9E9C /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		1E44F5CA1C9124CB0071315E /* DMSuperTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMSuperTabBarController.swift; sourceTree = "<group>"; };
 		1E44F5CC1C9126910071315E /* DMToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMToolBar.swift; sourceTree = "<group>"; };
+		1E44F5CE1C929DB90071315E /* DMMainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMMainTableViewCell.swift; sourceTree = "<group>"; };
 		1E88084B1C8EDD5D009A9E9C /* DMNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E88084E1C8EDD5D009A9E9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E8808501C8EDD5D009A9E9C /* DMMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMMainController.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				1E8808801C91174B009A9E9C /* DMSuperNavigationController.swift */,
 				1E44F5CA1C9124CB0071315E /* DMSuperTabBarController.swift */,
 				1E44F5CC1C9126910071315E /* DMToolBar.swift */,
+				1E44F5CE1C929DB90071315E /* DMMainTableViewCell.swift */,
 			);
 			path = DMNote;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				1E8808811C91174B009A9E9C /* DMSuperNavigationController.swift in Sources */,
 				1E88084F1C8EDD5D009A9E9C /* AppDelegate.swift in Sources */,
 				1E88087F1C8FF1A1009A9E9C /* UIView+Extension.swift in Sources */,
+				1E44F5CF1C929DB90071315E /* DMMainTableViewCell.swift in Sources */,
 				1E88087D1C8FC538009A9E9C /* Macros.swift in Sources */,
 				1E44F5CD1C9126910071315E /* DMToolBar.swift in Sources */,
 			);

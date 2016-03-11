@@ -13,20 +13,38 @@ let mainCellIdentifier  =   "DMDirIdentifier"
 class DMMainController: UIViewController {
     
     lazy var toolBar:DMToolBar = {
-        return DMToolBar(frame: CGRect(x: 0, y: SCREENHEIGHT - 44 - NAVBAR_DEFAULT_HEIGHT, width: SCREENWIDTH, height: 44))
+        
+        var toolbar = DMToolBar(frame: CGRect(x: 0, y: SCREENHEIGHT - 44 - NAVBAR_DEFAULT_HEIGHT, width: SCREENWIDTH, height: 44))
+        var label = UILabel(frame: CGRect(x: SCREENWIDTH - 90, y: 0, width: 90, height: 44))
+        label.textColor = RGBCOLOR(255, g: 170, b: 0)
+        label.text = "新建文件夹"
+        toolbar.addSubview(label)
+        return toolbar
     }()
     
     lazy var tableView:UITableView = {
         let tableView = UITableView(frame: self.view.frame)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: mainCellIdentifier)
+        tableView.registerClass(DMMainTableViewCell.self, forCellReuseIdentifier: mainCellIdentifier)
+        var headerView = UIView(frame: CGRect(x: 0, y: 0, width: SCREENWIDTH, height: 38))
+        var label = UILabel(frame: CGRect(x: 10, y: 0, width: SCREENWIDTH - 10, height: 37))
+        label.font = UIFont.systemFontOfSize(15)
+        label.text = "我的 IPHONE 上"
+        label.textColor = RGBCOLOR(123, g: 123, b: 123)
+        var lineView = UIView(frame: CGRect(x: 0, y: 37.5, width: SCREENWIDTH, height: 0.5))
+        lineView.backgroundColor = RGBCOLOR(177, g: 177, b: 177)
+        
+        headerView.addSubview(label)
+        headerView.addSubview(lineView)
+        
+        tableView.tableFooterView = UIView()
+        tableView.tableHeaderView = headerView
         return tableView
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.tableFooterView = UIView()
         self.title = "文件夹"
         let image = UIImage(named: "bg_note")
         self.view.layer.contents = image!.CGImage    // 如果需要背景透明加上下面这句
@@ -71,7 +89,8 @@ extension DMMainController:UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(mainCellIdentifier)
         cell?.backgroundColor = UIColor.clearColor()
+        cell?.selectionStyle = .Gray
+        cell?.editingAccessoryView?.tintColor = RGBCOLOR(255, g: 170, b: 0)
         return cell!
     }
-    
 }

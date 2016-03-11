@@ -11,7 +11,13 @@ import UIKit
 class DMToolBar: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = UIColor.clearColor()
+        let image = UIImage(named: "bg_note")
+        self.layer.contents = image!.CGImage
+        self.layer.backgroundColor = UIColor.clearColor().CGColor
+        self.alpha = 0.9
+        let lineView = UIView(frame: CGRect(x: 0, y: 0, width: SCREENWIDTH, height: 0.5))
+        self.addSubview(lineView)
+        lineView.backgroundColor = RGBCOLOR(177, g: 177, b: 177)
     }
 
     required init?(coder aDecoder: NSCoder) {
