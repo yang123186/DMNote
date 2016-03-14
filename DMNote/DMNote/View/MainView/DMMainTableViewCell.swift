@@ -18,7 +18,7 @@ let  mainCellOffset:CGFloat  =   50.0
 class DMMainTableViewCell: UITableViewCell {
 //MARK: - 属性
     /// 编辑模式与非编辑模式的转化
-    var editerMode:Bool = false {
+    internal var editerMode:Bool = false {
         didSet {
             weak var weakSelf = self
             if editerMode {
@@ -44,8 +44,16 @@ class DMMainTableViewCell: UITableViewCell {
             }
         }
     }
-    
+    /// CELL的代理
     weak internal var mainTableDelegate: DMMainTableDelegate?
+    /// 文件夹model
+    internal var floderModel:DMFloderModel? {
+        didSet {
+            self.leftTextLable.text = floderModel?.floderName!
+            let number:Int = (floderModel?.floderNumber)!
+            self.rightTextLabel.text = String(number)
+        }
+    }
     /// 动画时间默认为0.0，有动画为0.3
     private var animateDuring = 0.0
     /// 编辑多选按钮
@@ -74,16 +82,23 @@ class DMMainTableViewCell: UITableViewCell {
     /// 文件夹名
     lazy private var leftTextLable:UILabel = {
         var label = UILabel()
+        label.textAlignment = .Left
+        label.textColor = RGBCOLOR(77, g: 77, b: 77)
+        label.font = UIFont.systemFontOfSize(16)
         return label
     }()
     /// 文件夹内文件数
     lazy private var rightTextLabel:UILabel = {
         var label = UILabel()
+        label.textAlignment = .Right
+        label.textColor = RGBCOLOR(77, g: 77, b: 77)
+        label.font = UIFont.systemFontOfSize(16)
         return label
     }()
     /// 箭头图片
     lazy private var accessoryRightIcon:UIImageView = {
         var imageView = UIImageView()
+        imageView.image = UIImage(named: "arrow_right")?.imageWithTintColor(RGBCOLOR(210, g: 210, b: 210))
         return imageView
     }()
     /// 界面容器
@@ -123,10 +138,24 @@ class DMMainTableViewCell: UITableViewCell {
         }
         
         leftTextLable.snp_makeConstraints { (make) -> Void in
-            make.left.equalTo(accessoryLeftIcon).offset(5)
-            make.right.equalTo(rightTextLabel).offset(5)
+            make.left.equalTo(accessoryLeftIcon.snp_right).offset(15)
             make.centerY.equalTo(self)
             make.height.equalTo(34)
+        }
+        
+        rightTextLabel.snp_makeConstraints { (make) -> Void in
+            make.left.equalTo(leftTextLable.snp_right).offset(5)
+            make.centerY.equalTo(self)
+            make.height.equalTo(34)
+            make.width.equalTo(34)
+        }
+
+        accessoryRightIcon.snp_makeConstraints { (make) -> Void in
+            make.left.equalTo(rightTextLabel.snp_right).offset(5)
+            make.right.equalTo(mainView).offset(-5)
+            make.width.equalTo(26)
+            make.height.equalTo(26)
+            make.centerY.equalTo(self)
         }
         
     //    rightTextLabel

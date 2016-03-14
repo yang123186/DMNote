@@ -13,7 +13,7 @@ let mainCellIdentifier  =   "DMDirIdentifier"
 class DMMainController: UIViewController {
 //MARK: - 属性
     /// 文件夹的数组，数据源
-    private var floderArray = [String]()
+    private var floderArray = [DMFloderModel]()
     /// 编辑模式
     private var editorMode = false;
     /// 底部工具栏
@@ -51,7 +51,14 @@ class DMMainController: UIViewController {
 //MARK: - 生命周期
     override func viewDidLoad() {
         super.viewDidLoad()
-        floderArray = ["工作", "家庭", "朋友"]
+        
+        /// 测试数据
+        let defaultData = DMFloderModel(name: "所有我的 iPhone 上")
+        let homeData = DMFloderModel(name: "家庭")
+        let workData = DMFloderModel(name: "工作")
+        let friendData = DMFloderModel(name:"朋友")
+        
+        floderArray = [defaultData, homeData, workData, friendData]
         self.title = "文件夹"
         let image = UIImage(named: "bg_note")
         self.view.layer.contents = image!.CGImage    // 如果需要背景透明加上下面这句
@@ -147,6 +154,7 @@ extension DMMainController:UITableViewDataSource {
         cell?.selectionStyle = .Gray
         cell?.mainTableDelegate = self
         cell?.editingAccessoryView?.tintColor = UIColor.noteNormalColor()
+        cell?.floderModel = floderArray[indexPath.row]
         return cell!
     }
 }
