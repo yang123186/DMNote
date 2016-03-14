@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E44F5CB1C9124CB0071315E /* DMSuperTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E44F5CA1C9124CB0071315E /* DMSuperTabBarController.swift */; };
-		1E44F5CD1C9126910071315E /* DMToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E44F5CC1C9126910071315E /* DMToolBar.swift */; };
-		1E44F5CF1C929DB90071315E /* DMMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E44F5CE1C929DB90071315E /* DMMainTableViewCell.swift */; };
-		1E88084F1C8EDD5D009A9E9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E88084E1C8EDD5D009A9E9C /* AppDelegate.swift */; };
-		1E8808511C8EDD5D009A9E9C /* DMMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8808501C8EDD5D009A9E9C /* DMMainController.swift */; };
-		1E8808561C8EDD5D009A9E9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E8808551C8EDD5D009A9E9C /* Assets.xcassets */; };
+		1E13D6121C96B68E00631E71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E13D60F1C96B68E00631E71 /* AppDelegate.swift */; };
+		1E13D6131C96B68E00631E71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E13D6101C96B68E00631E71 /* Assets.xcassets */; };
+		1E13D6141C96B68E00631E71 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E13D6111C96B68E00631E71 /* Info.plist */; };
+		1E13D6201C96B6C500631E71 /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E13D61F1C96B6C500631E71 /* Macros.swift */; };
+		1E13D6221C96B6D300631E71 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E13D6211C96B6D300631E71 /* UIView+Extension.swift */; };
+		1E13D6271C96B80E00631E71 /* DMMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E13D6251C96B80E00631E71 /* DMMainTableViewCell.swift */; };
+		1E13D6281C96B80E00631E71 /* DMToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E13D6261C96B80E00631E71 /* DMToolBar.swift */; };
+		1E13D62B1C96B81800631E71 /* DMMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E13D62A1C96B81800631E71 /* DMMainController.swift */; };
+		1E13D62F1C96B81E00631E71 /* DMSuperNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E13D62D1C96B81E00631E71 /* DMSuperNavigationController.swift */; };
+		1E13D6301C96B81E00631E71 /* DMSuperTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E13D62E1C96B81E00631E71 /* DMSuperTabBarController.swift */; };
+		1E235A291C96635100CF2D73 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E235A281C96635100CF2D73 /* UIColor+Extension.swift */; };
 		1E8808591C8EDD5D009A9E9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E8808571C8EDD5D009A9E9C /* LaunchScreen.storyboard */; };
 		1E8808641C8EDD5D009A9E9C /* DMNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8808631C8EDD5D009A9E9C /* DMNoteTests.swift */; };
 		1E88086F1C8EDD5D009A9E9C /* DMNoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E88086E1C8EDD5D009A9E9C /* DMNoteUITests.swift */; };
-		1E88087D1C8FC538009A9E9C /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E88087C1C8FC538009A9E9C /* Macros.swift */; };
-		1E88087F1C8FF1A1009A9E9C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E88087E1C8FF1A0009A9E9C /* UIView+Extension.swift */; };
-		1E8808811C91174B009A9E9C /* DMSuperNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8808801C91174B009A9E9C /* DMSuperNavigationController.swift */; };
 		FF884850A96138C7E1D09377 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEF4C91F83A38404996AD6AA /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,24 +42,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E44F5CA1C9124CB0071315E /* DMSuperTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMSuperTabBarController.swift; sourceTree = "<group>"; };
-		1E44F5CC1C9126910071315E /* DMToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMToolBar.swift; sourceTree = "<group>"; };
-		1E44F5CE1C929DB90071315E /* DMMainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMMainTableViewCell.swift; sourceTree = "<group>"; };
+		1E13D60F1C96B68E00631E71 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1E13D6101C96B68E00631E71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E13D6111C96B68E00631E71 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E13D61F1C96B6C500631E71 /* Macros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
+		1E13D6211C96B6D300631E71 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		1E13D6251C96B80E00631E71 /* DMMainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMMainTableViewCell.swift; sourceTree = "<group>"; };
+		1E13D6261C96B80E00631E71 /* DMToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMToolBar.swift; sourceTree = "<group>"; };
+		1E13D62A1C96B81800631E71 /* DMMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMMainController.swift; sourceTree = "<group>"; };
+		1E13D62D1C96B81E00631E71 /* DMSuperNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMSuperNavigationController.swift; sourceTree = "<group>"; };
+		1E13D62E1C96B81E00631E71 /* DMSuperTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMSuperTabBarController.swift; sourceTree = "<group>"; };
+		1E235A281C96635100CF2D73 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		1E88084B1C8EDD5D009A9E9C /* DMNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E88084E1C8EDD5D009A9E9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1E8808501C8EDD5D009A9E9C /* DMMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMMainController.swift; sourceTree = "<group>"; };
-		1E8808551C8EDD5D009A9E9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E8808581C8EDD5D009A9E9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1E88085A1C8EDD5D009A9E9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E88085F1C8EDD5D009A9E9C /* DMNoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E8808631C8EDD5D009A9E9C /* DMNoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMNoteTests.swift; sourceTree = "<group>"; };
 		1E8808651C8EDD5D009A9E9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E88086A1C8EDD5D009A9E9C /* DMNoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMNoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E88086E1C8EDD5D009A9E9C /* DMNoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMNoteUITests.swift; sourceTree = "<group>"; };
 		1E8808701C8EDD5D009A9E9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E88087C1C8FC538009A9E9C /* Macros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
-		1E88087E1C8FF1A0009A9E9C /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		1E8808801C91174B009A9E9C /* DMSuperNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DMSuperNavigationController.swift; sourceTree = "<group>"; };
 		8089751ECAD5F45EEC33686A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		AEF4C91F83A38404996AD6AA /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1335CCDA055E08516B914FD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +100,92 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		1E13D60A1C96B5DE00631E71 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1E13D61F1C96B6C500631E71 /* Macros.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1E13D60B1C96B5E600631E71 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1E13D6231C96B80600631E71 /* MainModel */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		1E13D60C1C96B5EC00631E71 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1E13D62C1C96B81E00631E71 /* NavAndTabbar */,
+				1E13D6291C96B81800631E71 /* MainController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1E13D60D1C96B60100631E71 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E13D6241C96B80E00631E71 /* MainView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1E13D60E1C96B62E00631E71 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				1E13D60F1C96B68E00631E71 /* AppDelegate.swift */,
+				1E13D6101C96B68E00631E71 /* Assets.xcassets */,
+				1E13D6111C96B68E00631E71 /* Info.plist */,
+				1E8808571C8EDD5D009A9E9C /* LaunchScreen.storyboard */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		1E13D6231C96B80600631E71 /* MainModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainModel;
+			sourceTree = "<group>";
+		};
+		1E13D6241C96B80E00631E71 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				1E13D6251C96B80E00631E71 /* DMMainTableViewCell.swift */,
+				1E13D6261C96B80E00631E71 /* DMToolBar.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		1E13D6291C96B81800631E71 /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				1E13D62A1C96B81800631E71 /* DMMainController.swift */,
+			);
+			path = MainController;
+			sourceTree = "<group>";
+		};
+		1E13D62C1C96B81E00631E71 /* NavAndTabbar */ = {
+			isa = PBXGroup;
+			children = (
+				1E13D62D1C96B81E00631E71 /* DMSuperNavigationController.swift */,
+				1E13D62E1C96B81E00631E71 /* DMSuperTabBarController.swift */,
+			);
+			path = NavAndTabbar;
+			sourceTree = "<group>";
+		};
+		1E235A271C96633600CF2D73 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1E13D6211C96B6D300631E71 /* UIView+Extension.swift */,
+				1E235A281C96635100CF2D73 /* UIColor+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		1E8808421C8EDD5D009A9E9C = {
 			isa = PBXGroup;
 			children = (
@@ -122,17 +211,12 @@
 		1E88084D1C8EDD5D009A9E9C /* DMNote */ = {
 			isa = PBXGroup;
 			children = (
-				1E88084E1C8EDD5D009A9E9C /* AppDelegate.swift */,
-				1E8808501C8EDD5D009A9E9C /* DMMainController.swift */,
-				1E8808551C8EDD5D009A9E9C /* Assets.xcassets */,
-				1E8808571C8EDD5D009A9E9C /* LaunchScreen.storyboard */,
-				1E88085A1C8EDD5D009A9E9C /* Info.plist */,
-				1E88087C1C8FC538009A9E9C /* Macros.swift */,
-				1E88087E1C8FF1A0009A9E9C /* UIView+Extension.swift */,
-				1E8808801C91174B009A9E9C /* DMSuperNavigationController.swift */,
-				1E44F5CA1C9124CB0071315E /* DMSuperTabBarController.swift */,
-				1E44F5CC1C9126910071315E /* DMToolBar.swift */,
-				1E44F5CE1C929DB90071315E /* DMMainTableViewCell.swift */,
+				1E13D60E1C96B62E00631E71 /* other */,
+				1E13D60D1C96B60100631E71 /* View */,
+				1E13D60C1C96B5EC00631E71 /* Controller */,
+				1E13D60B1C96B5E600631E71 /* model */,
+				1E13D60A1C96B5DE00631E71 /* Common */,
+				1E235A271C96633600CF2D73 /* Extension */,
 			);
 			path = DMNote;
 			sourceTree = "<group>";
@@ -272,8 +356,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E13D6141C96B68E00631E71 /* Info.plist in Resources */,
 				1E8808591C8EDD5D009A9E9C /* LaunchScreen.storyboard in Resources */,
-				1E8808561C8EDD5D009A9E9C /* Assets.xcassets in Resources */,
+				1E13D6131C96B68E00631E71 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,14 +431,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E44F5CB1C9124CB0071315E /* DMSuperTabBarController.swift in Sources */,
-				1E8808511C8EDD5D009A9E9C /* DMMainController.swift in Sources */,
-				1E8808811C91174B009A9E9C /* DMSuperNavigationController.swift in Sources */,
-				1E88084F1C8EDD5D009A9E9C /* AppDelegate.swift in Sources */,
-				1E88087F1C8FF1A1009A9E9C /* UIView+Extension.swift in Sources */,
-				1E44F5CF1C929DB90071315E /* DMMainTableViewCell.swift in Sources */,
-				1E88087D1C8FC538009A9E9C /* Macros.swift in Sources */,
-				1E44F5CD1C9126910071315E /* DMToolBar.swift in Sources */,
+				1E13D6281C96B80E00631E71 /* DMToolBar.swift in Sources */,
+				1E13D6201C96B6C500631E71 /* Macros.swift in Sources */,
+				1E13D6301C96B81E00631E71 /* DMSuperTabBarController.swift in Sources */,
+				1E13D6221C96B6D300631E71 /* UIView+Extension.swift in Sources */,
+				1E13D6271C96B80E00631E71 /* DMMainTableViewCell.swift in Sources */,
+				1E13D62B1C96B81800631E71 /* DMMainController.swift in Sources */,
+				1E235A291C96635100CF2D73 /* UIColor+Extension.swift in Sources */,
+				1E13D62F1C96B81E00631E71 /* DMSuperNavigationController.swift in Sources */,
+				1E13D6121C96B68E00631E71 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +481,7 @@
 				1E8808581C8EDD5D009A9E9C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -489,7 +576,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = DMNote/Info.plist;
+				INFOPLIST_FILE = DMNote/other/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "yang-demoNote";
@@ -503,7 +590,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = DMNote/Info.plist;
+				INFOPLIST_FILE = DMNote/other/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "yang-demoNote";

@@ -56,3 +56,5 @@ func RGBACOLOR(r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
 func RGBCOLOR(r:CGFloat, g:CGFloat, b:CGFloat) -> UIColor {
     return RGBACOLOR(r, g: g, b: b, a: 1)
 }
+
+
