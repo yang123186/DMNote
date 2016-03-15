@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DMToolBar: UIView {
+class DMToolBar: UIControl {
     override init(frame: CGRect) {
         super.init(frame: frame)
         let image = UIImage(named: "bg_note")

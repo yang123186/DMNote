@@ -23,6 +23,7 @@ class DMMainController: UIViewController {
         self.toolBarTextLabel.text = "新建文件夹"
         self.toolBarTextLabel.textAlignment = .Right
         toolbar.addSubview(self.toolBarTextLabel)
+        toolbar.addTarget(self, action: Selector("mkdirClicked"), forControlEvents: .TouchUpInside)
         return toolbar
     }()
     /// 底部工具栏的描述文字
@@ -121,8 +122,24 @@ class DMMainController: UIViewController {
      */
     func mkdirClicked() {
         print("mkdir is clicked")
+        let alertView = UIAlertController(title: "新建文件夹", message: "请为此文件夹输入名称", preferredStyle: .Alert)
+        let actionCancel = UIAlertAction(title: "取消", style: .Cancel, handler: nil)
+        actionCancel
+        alertView.addAction(actionCancel)
+        let actionSure = UIAlertAction(title: "存储", style: .Default) { action -> Void in
+            
+        }
+        alertView.addAction(actionSure)
+        alertView.addTextFieldWithConfigurationHandler { inputField -> Void in
+            inputField.placeholder = "名称"
+            inputField.tintColor = UIColor.noteNormalColor()
+        }
+        resetSubViewsButtonColor(alertView.view)
+        self.presentViewController(alertView, animated: true, completion: nil)
     }
-    
+    /**
+    获取选择项的数目
+    */
     func numberOfSelected() -> Int{
         var resultNum = 0;
         for var i = 0; i < floderArray.count; i++ {
@@ -133,6 +150,22 @@ class DMMainController: UIViewController {
             }
         }
         return resultNum
+    }
+    /**
+     重新设置view中的label中文字颜色
+    */
+    func resetSubViewsButtonColor(view:UIView) {
+        for subview in view.subviews {
+            print(view.self)
+            if subview is UILabel {
+                let label = subview as! UILabel
+                label.textColor = UIColor.noteNormalColor()
+                print("reset SUCCESS")
+            }
+            else {
+                resetSubViewsButtonColor(subview)
+            }
+        }
     }
 }
 //MARK: - Delegate
